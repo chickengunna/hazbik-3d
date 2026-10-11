@@ -586,8 +586,8 @@ $('#faceBtn').addEventListener('click',()=>$('#faceIn').click());
 $('#faceIn').addEventListener('change',e=>loadFaceFile(e.target.files[0]));
 addEventListener('dragover',e=>e.preventDefault());
 addEventListener('drop',e=>{e.preventDefault();loadFaceFile(e.dataTransfer.files[0])});
-// если рядом с файлом лежит face.jpg (и страница открыта через сервер) — подхватим автоматически
-{const img=new Image();img.onload=()=>applyFace(img);img.src='face.jpg'}
+// если рядом с файлом лежит face.webp (и страница открыта через сервер) — подхватим автоматически
+{const img=new Image();img.onload=()=>applyFace(img);img.src='face.webp'}
 
 /* ============ loop ============ */
 const clock=new THREE.Clock();let active='hero';
